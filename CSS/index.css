@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:beige;
+}
+
+header {
+    background-color: rgb(22, 3, 80);
+    color:#fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(182, 194, 17); 
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color:beige;
+    color:black;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px; 
+}
+
+.about-section {
+    grid-column: 1 / 2; /* About section occupies first column */
+    text-align: justify;
+}
+
+.map-section {
+    grid-column: 2 / 3; /* Map section occupies second column */
+}
+
+.map-section iframe {
+    width: 100%; 
+    height: 450px;
+}
+ /*image styling*/ 
+ .image-flex {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    gap: 20px; 
+}
+
+.image-container {
+    flex: 1; 
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
